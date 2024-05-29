@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx 
-        image: nginx:placeholder
+        image: artifactory.sandbox.gitops.1keyes.net/te-docker-release/gitops/test-image:placeholder
         volumeMounts:
         - name: content
           mountPath: /usr/share/nginx/html
