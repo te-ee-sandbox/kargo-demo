@@ -13,8 +13,14 @@ spec:
         app: kargo-demo
     spec:
       containers:
-      - name: nginx 
+      - name: nginx
         image: artifactory.sandbox.gitops.1keyes.net/te-docker-release/gitops/test-image:placeholder
+        env:
+        - name: KARGO_DEMO
+          valueFrom:
+            configMapKeyRef:
+              name: kargo-demo
+              key: kargo-demo-data
         volumeMounts:
         - name: content
           mountPath: /usr/share/nginx/html
