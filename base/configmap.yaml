@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: kargo-demo
 data:
-  kargo-demo-data: "this is just a test"
+  kargo-demo-data: "this is just a another change to config on main"
 
