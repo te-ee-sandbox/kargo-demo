@@ -15,4 +15,4 @@ patches:
     name: kargo-demo
 images:
 - name: artifactory.sandbox.gitops.1keyes.net/te-docker-release/gitops/test-image
-  newTag: 1.4.0
+  newTag: 1.1.0
